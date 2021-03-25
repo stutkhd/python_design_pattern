@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  dev:
+    container_name: design_pattern
+    image: python:3.8
+    volumes:
+      - .:/work
+    working_dir: /work
+    tty: True
