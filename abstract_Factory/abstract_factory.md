@@ -27,3 +27,25 @@ AbstractFactoryは素材と作り方があまり変わらない時、これら�
 2. self.factoryがPizzaFactoryAのインスタンスのため、PizzaFactoryAクラスのadd_dough()が呼ばれる
 という流れ。
 
+## new_pizza.pyはpythonらしく書いたver  
+-> クラス内クラスを使用する  
+
+材料は工場によって違って、工場ごとの専用クラスになっている  
+ex)小麦生地クラス、トマトソースクラス、コーントッピングクラスは工場Aクラス専用のクラス  
+Pythonでは、クラスの中にクラスを含めることができます。  
+
+そこで、今回は  
+工場のクラスに材料のクラスを含める
+
+@classmethod -> クラスメソッド: クラスに紐づくメソッド  
+インスタンスなしで実行できる
+
+```
+# インスタンスメソッドの場合
+ins_method = Class_A()
+ins_method.method(1,2,3)
+
+# クラスメソッドの場合
+Class_B().method(1,2,3)
+
+```
