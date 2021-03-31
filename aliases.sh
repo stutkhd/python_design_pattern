@@ -1,4 +1,4 @@
-alias="docker-compose run --rm dev bash"
+alias dev-bash="docker-compose run --rm dev bash"
 
 setup() {
     echo "Set up $1"
