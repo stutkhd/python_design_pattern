@@ -7,7 +7,7 @@ def main():
 
 class Factory:
     def __init__(self, animal_class):
-        self.animal = animal_class()
+        self.animal = animal_class() # factoryメソッドなしでそのまま渡せる
 
     def check_animal(self):
         self.animal.eat()
