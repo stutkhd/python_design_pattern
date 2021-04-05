@@ -27,4 +27,12 @@ class HtmlReporter(Reporter, HtmlWriter):
 ```
 
 １行目はHtmlWriterに対して**汎化(継承)**を、Reporterに対して**実現**をしたいためこのような書き方になっている。  
-pythonでは両方継承すればいい
+pythonでは両方継承すればいい。pythonでは多重継承できるためエラーでない
+
+```python
+def header(self, title):
+    self.out_header()
+    self.out_title(title)
+    self.out_start_body()
+```
+header メソッドに対して、元のout_header,out_title,out_start_bodyを使用することで代用している。  
