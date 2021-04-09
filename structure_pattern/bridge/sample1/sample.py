@@ -42,7 +42,7 @@ class Sorter:
     def sort(self, a):
         return self.sorter.sort(a)
 
-class SortImple: # こいつはいつ発生する？
+class SortImple:
     def sort(a):
         raise NotImplementedError
 
@@ -52,7 +52,6 @@ class QuickSorter(SortImple):
         pass
     def sort(self, a):
         return qsort(a)
-
 
 class BubbleSorter(SortImple):
     def __init__(self):
